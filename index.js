@@ -1,6 +1,8 @@
-const axios = require('axios');
-const OpenAI = require('openai');
-// const nodemailer = require('nodemailer'); // demo only, oxi energo tora
+import { serve } from "https://deno.land/std@0.168.0/http/server.ts";
+import axios from "npm:axios";
+import OpenAI from "npm:openai";
+import * as nodemailer from "npm:nodemailer";
+import { createClient } from 'https://esm.sh/@supabase/supabase-js@2'
 require('dotenv').config();
 
 /**
